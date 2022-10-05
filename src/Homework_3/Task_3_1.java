@@ -11,8 +11,8 @@ public class Task_3_1 {
             array[i] = in.nextInt();
         }
         int min = array[0];
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] < min && array[i] > 0)
+        for (int i = 1; i < n; i++) {
+            if (array[i] < min && array[i] > 0 || min < 0)
                 min = array[i];
         }
         System.out.println(min);
