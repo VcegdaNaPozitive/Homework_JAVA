@@ -22,7 +22,7 @@ public class Task_2 {
         }
         for (int i = 0; i < 2 * n + 1; i++) {
             for (int j = 0; j < 2 * n + 1; j++) {
-                System.out.print(A[i][j] + "  ");
+                System.out.printf(A[i][j] + "\t");
             }
             System.out.println();
         }

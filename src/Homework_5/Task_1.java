@@ -17,7 +17,7 @@ public class Task_1 {
         }
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                System.out.print(a[i][j] + "  ");
+                System.out.print(a[i][j] + "\t");
             }
             System.out.println();
         }
