@@ -13,13 +13,19 @@ public class Task_3 {
         System.out.println(minToBegin(array));
     }
 
-    public static int minToBegin(int[] array) {
-        int min = array[0];
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] < min)
-                min = array[i];
-
+    public static int minToBegin(int[] a) {
+        int index = 0;
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] < a[index]) {
+                index = i;
+            }
         }
-        return min;
+        for (int i = a.length - 1; i > index; i--) {
+            a[i] = a[i - 1];
+        }
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+        return -1;
     }
 }
