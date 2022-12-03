@@ -1,4 +1,4 @@
-package Homework_15;
+package Homework__15;
 
 public class Trinity<T extends Comparable<T>> {
     private T first;
