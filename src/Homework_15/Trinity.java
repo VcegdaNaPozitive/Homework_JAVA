@@ -40,21 +40,21 @@ public class Trinity<T extends Comparable<T>> {
     }
 
     private void sort() {
-        T t;
+        T a;
         if (first.compareTo(second) < 0) {
-            t = first;
+            a = first;
             first = second;
-            second = t;
+            second = a;
         }
         if (first.compareTo(third) < 0) {
-            t = first;
+            a = first;
             first = third;
-            third = t;
+            third = a;
         }
         if (second.compareTo(third) < 0) {
-            t = second;
+            a = second;
             second = third;
-            third = t;
+            third = a;
         }
     }
 }
